@@ -1,0 +1,49 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      {% assign is_nav_page = false %}
+      {% if page.url contains '/features' or page.url contains '/team' or page.url contains '/opensource' or page.url contains '/blog' or page.url contains '/contact' %}
+        {% assign is_nav_page = true %}
+      {% endif %}
+
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="logo-prefix">[</span>radegast<span class="logo-prefix">]</span>{% unless is_nav_page %}<span class="logo-cursor"></span>{% endunless %}
+      </a>
+
+      <nav id="main-nav">
+        <a href="{{ '/features/' | relative_url }}" {% if page.url contains '/features' %}class="active"{% endif %}>features</a>
+        <a href="{{ '/team/' | relative_url }}" {% if page.url contains '/team' %}class="active"{% endif %}>team</a>
+        <a href="{{ '/opensource/' | relative_url }}" {% if page.url contains '/opensource' %}class="active"{% endif %}>open source</a>
+        <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>blog</a>
+        <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active"{% endif %}>contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="{{ site.github_org }}" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="{{ site.console_url }}" class="btn btn-primary btn-console" target="_blank" rel="noopener noreferrer">
+          <span class="status-dot"></span>
+          Open Console
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    var header = toggle && toggle.closest('.site-header');
+    if (toggle && header) {
+      toggle.addEventListener('click', function() {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  })();
+</script>

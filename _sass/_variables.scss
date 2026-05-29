@@ -1,0 +1,31 @@
+// Color palette
+$bg-primary:      #0a0a0a;
+$bg-secondary:    #0f1117;
+$bg-card:         #13161e;
+$bg-card-hover:   #1a1e28;
+$border-color:    #1e2330;
+$border-accent:   #00ff8822;
+
+$green:           #00ff88;
+$green-dim:       #00cc6a;
+$cyan:            #00d4ff;
+$cyan-dim:        #00a8cc;
+$red-alert:       #ff4444;
+$yellow-warn:     #ffcc00;
+
+$text-primary:    #e0e6f0;
+$text-secondary:  #8892a4;
+$text-muted:      #4a5568;
+$text-code:       #00ff88;
+
+// Typography
+$font-mono:       'JetBrains Mono', 'Fira Code', monospace;
+$font-body:       'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Spacing
+$container-max:   1200px;
+$container-pad:   2rem;
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-med:  300ms ease;

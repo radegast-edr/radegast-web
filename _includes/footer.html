@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-prefix">[</span>radegast<span class="logo-prefix">]</span> EDR
+        </div>
+        <p>Open-source, privacy-first endpoint detection and response.<br>All your EDR data is end-to-end encrypted.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="{{ '/features/' | relative_url }}">Features</a></li>
+          <li><a href="{{ site.console_url }}" target="_blank" rel="noopener noreferrer">Open Console ↗</a></li>
+          <li><a href="{{ site.rustinel_url }}" target="_blank" rel="noopener noreferrer">Rustinel Engine ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="{{ site.github_org }}" target="_blank" rel="noopener noreferrer">GitHub Org ↗</a></li>
+          <li><a href="{{ '/team/' | relative_url }}">Team</a></li>
+          <li><a href="{{ '/opensource/' | relative_url }}">Open Source</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li><a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS Feed ↗</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} Radegast EDR &mdash; Apache 2.0 License</span>
+      <span class="footer-powered">powered by <a href="{{ site.rustinel_url }}" target="_blank" rel="noopener noreferrer"><span>rustinel</span></a></span>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,8 @@
+- name: "Aris Sarris"
+  github: "boilfire"
+  email: "aris@radegast.app"
+  role: "Threat detection, incident response"
+- name: "Adam Hlaváček"
+  github: "esoadamo"
+  email: "adam@radegast.app"
+  role: "Software development, cyber threat intelligence"

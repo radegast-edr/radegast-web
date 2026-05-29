@@ -1,0 +1,21 @@
+<div class="team-card">
+  <img
+    class="team-avatar"
+    src="https://github.com/{{ member.github }}.png?size=160"
+    alt="{{ member.name }}"
+    width="80"
+    height="80"
+    loading="lazy"
+  >
+  <span class="team-name">{{ member.name }}</span>
+  {% if member.role %}<span class="team-role">{{ member.role }}</span>{% endif %}
+  <div class="team-links">
+    <a href="https://github.com/{{ member.github }}" target="_blank" rel="noopener noreferrer">@{{ member.github }}</a>
+    {% if member.email %}
+    <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+    {% endif %}
+    {% if member.web %}
+    <a href="{{ member.web }}" target="_blank" rel="noopener noreferrer">web ↗</a>
+    {% endif %}
+  </div>
+</div>

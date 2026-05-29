@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="container">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+        {% if page.author %}<span class="post-author"> &mdash; {{ page.author }}</span>{% endif %}
+      </p>
+    </header>
+    <div class="post-body">
+      {{ content }}
+    </div>
+    <div class="post-footer">
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn-ghost">&larr; Back to Blog</a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,297 @@
+// ─── Site layout ───────────────────────────────────────────────────────────
+
+.site-main {
+  min-height: calc(100vh - 80px - 200px);
+}
+
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-pad;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
+
+// ─── Header / Nav ─────────────────────────────────────────────────────────
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba($bg-primary, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border-color;
+
+  > .container {
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: $font-mono;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $text-primary;
+    text-decoration: none;
+
+    &:hover { color: $green; }
+
+    .logo-prefix {
+      color: $green;
+    }
+
+    .logo-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      background: $green;
+      margin-left: 2px;
+      animation: blink 1.2s step-end infinite;
+      vertical-align: text-bottom;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex: 1;
+
+    a {
+      font-family: $font-mono;
+      font-size: 0.85rem;
+      color: $text-secondary;
+      letter-spacing: 0.02em;
+      text-transform: lowercase;
+      transition: color $transition-fast;
+
+      &:hover { color: $green; }
+
+      &.active {
+        color: $green;
+        &::after {
+          content: '_';
+          display: inline-block;
+          animation: blink 1.2s step-end infinite;
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: $text-secondary;
+    flex-direction: column;
+    gap: 5px;
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: currentColor;
+      transition: $transition-fast;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav, .header-actions .btn:not(.btn-console) {
+      display: none;
+    }
+
+    &.nav-open {
+      nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: $bg-secondary;
+        border-bottom: 1px solid $border-color;
+        padding: 1rem 1.5rem 1.5rem;
+        gap: 1rem;
+        align-items: flex-start;
+
+        a { font-size: 0.95rem; }
+      }
+    }
+  }
+}
+
+// ─── Footer ───────────────────────────────────────────────────────────────
+
+.site-footer {
+  border-top: 1px solid $border-color;
+  background: $bg-secondary;
+  padding: 3rem 0 2rem;
+  margin-top: 6rem;
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .footer-brand {
+    .footer-logo {
+      font-family: $font-mono;
+      font-weight: 700;
+      font-size: 1rem;
+      color: $text-primary;
+      margin-bottom: 0.5rem;
+
+      .logo-prefix { color: $green; }
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+  }
+
+  .footer-links {
+    h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: $text-muted;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li { margin-bottom: 0.4rem; }
+
+      a {
+        font-size: 0.875rem;
+        color: $text-secondary;
+
+        &:hover { color: $green; }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    border-top: 1px solid $border-color;
+    font-size: 0.8rem;
+    color: $text-muted;
+    font-family: $font-mono;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    a { color: $text-muted; &:hover { color: $green; } }
+
+    .footer-powered {
+      color: $text-muted;
+      span { color: $green; }
+    }
+  }
+}
+
+// ─── Page / Post content ──────────────────────────────────────────────────
+
+.page-content,
+.post {
+  padding: 4rem 0;
+}
+
+.page-header,
+.post-header {
+  margin-bottom: 3rem;
+
+  .page-title,
+  .post-title {
+    color: $text-primary;
+    margin-bottom: 0.75rem;
+
+    &::before {
+      content: '# ';
+      color: $green;
+      font-size: 0.75em;
+    }
+  }
+
+  .page-description {
+    font-size: 1.1rem;
+    color: $text-secondary;
+    max-width: 640px;
+    margin-bottom: 0;
+  }
+}
+
+.post-meta {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  color: $text-muted;
+  margin-top: 0.5rem;
+}
+
+.page-body,
+.post-body {
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $border-color;
+    color: $cyan;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: $green;
+  }
+
+  p { margin-bottom: 1.25rem; }
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid $border-color;
+}
