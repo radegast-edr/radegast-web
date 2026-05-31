@@ -16,6 +16,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
   {% seo %}
   {% feed_meta %}
+  {%- if jekyll.environment != "dev" %}
+  <script defer data-domain="radegast.app" src="https://owl.adamhlavacek.com/js/script.js"></script>
+  {%- else %}
+  <meta id="jekyll-env">{{jekyll.environment}}</meta>
+  {%- endif %}
 </head>
 <body>
   <div class="scanlines"></div>
