@@ -211,6 +211,19 @@
     }
   }
 
+  .footer-links-community {
+    @media (min-width: 980px) {
+      ul {
+        columns: 2;
+        column-gap: 2rem;
+      }
+
+      li {
+        break-inside: avoid;
+      }
+    }
+  }
+
   .footer-bottom {
     display: flex;
     align-items: center;

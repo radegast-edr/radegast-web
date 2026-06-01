@@ -19,7 +19,7 @@
   {%- if jekyll.environment != "dev" %}
   <script defer data-domain="radegast.app" src="https://owl.adamhlavacek.com/js/script.js"></script>
   {%- else %}
-  <meta id="jekyll-env">{{jekyll.environment}}</meta>
+  <meta id="jekyll-env" value="{{jekyll.environment}}"/>
   {%- endif %}
 </head>
 <body>

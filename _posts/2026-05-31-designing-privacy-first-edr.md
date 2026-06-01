@@ -77,5 +77,5 @@ The [web UI](https://github.com/radegast-edr/radegast-console-web) is written in
 At the moment, the Console is running as an MVP. It has some demo detections that allow you to test out the functionality on Windows and Linux (and macOS, [hopefully soon](https://github.com/Karib0u/rustinel/pull/42)). The next step is to create a reliable process for testing real-world detections and subsequently publishing them for anybody to use via the Console. If you want to stay updated, consider:
 
 * Saving this blog's [RSS feed](https://radegast.app/rss.xml) in your reader
-* Following us on Mastodon (link soon, pending approval)
+* Following us on [Mastodon](https://infosec.exchange/@radegast_edr)
 * Trying out the [Console](https://console.radegast.app/) to see what it already does
