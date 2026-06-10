@@ -2,11 +2,11 @@
   'use strict';
 
   var phrases = [
-    'Detect threats. Respond fast. Trust your data.',
+    'Detect threats. Keep your data.',
     'Open-source endpoint detection for everyone.',
     'ETW + eBPF. Sigma + YARA. Zero lock-in.',
     'Your telemetry, end-to-end encrypted.',
-    'Built for blue teams. Powered by Rust.',
+    'Built for small teams, families, and home labbers.',
   ];
 
   var TYPING_SPEED = 45;    // ms per character

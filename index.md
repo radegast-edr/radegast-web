@@ -28,7 +28,7 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
 
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-value">100%</span>
+        <span class="stat-value">100 %</span>
         <span class="stat-label">Open-source</span>
       </div>
       <div class="stat-divider"></div>
@@ -43,8 +43,8 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-value">Rust</span>
-        <span class="stat-label">Powered</span>
+        <span class="stat-value">1-Click</span>
+        <span class="stat-label">Deployment</span>
       </div>
     </div>
   </div>
@@ -71,9 +71,9 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
         <p>All your EDR telemetry is end-to-end encrypted. Your data is yours — always.</p>
       </div>
       <div class="prop-item">
-        <span class="prop-icon">⚡</span>
-        <span class="prop-title">Zero cost</span>
-        <p>Radegast EDR is free. Cureated detections without an enterprise price tag.</p>
+        <span class="prop-icon">🏠</span>
+        <span class="prop-title">Small-scale friendly</span>
+        <p>Lightweight, easy to deploy, no infrastructure needed. Perfect for small teams, families, and home labs.</p>
       </div>
     </div>
   </div>
@@ -222,7 +222,7 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
 <section class="section-sm" style="text-align:center; border-top: 1px solid #1e2330;">
   <div class="container">
     <h2 style="margin-bottom:1rem;">Ready to protect your endpoints?</h2>
-    <p style="max-width:520px; margin:0 auto 2rem;">Open-source, free, and privacy-first. Your telemetry stays encrypted. No vendor lock-in, ever.</p>
+    <p style="max-width:520px; margin:0 auto 2rem;">Open-source, free, and privacy-first. Your telemetry stays encrypted. No vendor lock-in, ever. <strong>Built for small teams, families, and home labbers.</strong></p>
     <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
       <a href="{{ site.console_url }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
         <span class="status-dot"></span>
