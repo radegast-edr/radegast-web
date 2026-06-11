@@ -9,6 +9,7 @@ author:
 
 github_org: "https://github.com/radegast-edr"
 console_url: "https://console.radegast.app"
+docs_url: "https://docs.radegast.app"
 rustinel_url: "https://github.com/Karib0u/rustinel"
 
 plugins:
