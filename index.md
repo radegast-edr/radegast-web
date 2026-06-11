@@ -84,7 +84,7 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
     <div class="section-header">
       <span class="section-eyebrow">// detection capabilities</span>
       <h2>Multi-layer endpoint detection</h2>
-      <p>Radegast EDR combines three proven detection approaches on a single cross-platform agent.</p>
+      <p>Radegast EDR combines proven detection approaches on a single cross-platform agent.</p>
     </div>
 
     <div class="features-grid">
@@ -156,6 +156,41 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
 
     <div style="text-align:center; margin-top: 2.5rem;">
       <a href="{{ '/features/' | relative_url }}" class="btn btn-ghost">Full feature breakdown &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">// screenshots</span>
+      <h2>See it in action</h2>
+      <p>Get a glimpse of the Radegast EDR Console interface.</p>
+    </div>
+
+    <div class="screenshots-grid">
+      <div class="screenshot-card">
+        <a href="{{ '/assets/screenshots/dashboard.png' | relative_url }}" class="modal-trigger" data-caption="Dashboard">
+          <img src="{{ '/assets/screenshots/dashboard.png' | relative_url }}" alt="Radegast Dashboard" class="screenshot-image">
+        </a>
+        <div class="screenshot-caption">Dashboard</div>
+      </div>
+      <div class="screenshot-card">
+        <a href="{{ '/assets/screenshots/alert.png' | relative_url }}" class="modal-trigger" data-caption="Alert">
+          <img src="{{ '/assets/screenshots/alert.png' | relative_url }}" alt="Radegast Alert" class="screenshot-image">
+        </a>
+        <div class="screenshot-caption">Alert</div>
+      </div>
+      <div class="screenshot-card">
+        <a href="{{ '/assets/screenshots/packs.png' | relative_url }}" class="modal-trigger" data-caption="Packs">
+          <img src="{{ '/assets/screenshots/packs.png' | relative_url }}" alt="Radegast Packs" class="screenshot-image">
+        </a>
+        <div class="screenshot-caption">Packs</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 2.5rem;">
+      <a href="{{ '/screenshots/' | relative_url }}" class="btn btn-ghost">View all screenshots &rarr;</a>
     </div>
   </div>
 </section>
