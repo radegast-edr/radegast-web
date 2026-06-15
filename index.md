@@ -50,13 +50,6 @@ title: "Radegast EDR — Open-source Endpoint Detection & Response"
   </div>
 </section>
 
-<div class="construction-banner">
-  <div class="container">
-    <span class="construction-icon">🚧</span>
-    <span>Radegast EDR is currently under heavy construction &mdash; expect rough edges and missing pieces. <a href="/rss.xml">Subscribe to the RSS feed</a> to follow progress.</span>
-  </div>
-</div>
-
 <section class="section-sm">
   <div class="container">
     <div class="props-strip">
