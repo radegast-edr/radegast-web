@@ -29,7 +29,7 @@ windows-hunting
 
 ## Where the ranking needs a human
 
-CTID's list is deliberately generic -- it isn't aware of who Radegast is actually protecting. So we layer three kinds of judgment on top of it before it turns into a pack:
+CTID's ranking is a solid starting point, but it isn't aware of who Radegast is actually protecting -- it needs tuning to our specific use case before it's ready to ship. So we layer three kinds of judgment on top of it before it turns into a pack:
 
 **Audience fit.** For now, Radegast targets standalone machines -- individuals, families, and small teams, not domain-joined fleets (see [why we built it this way](/2026/05/31/designing-privacy-first-edr.html)). So every domain-joined tactic -- lateral movement, Kerberos abuse, AD/LDAP enumeration -- is excluded from all current packs, regardless of how high it scores. On Linux specifically, this also drops techniques that only produce signal via SSSD or Winbind. High CTID rank doesn't matter if the telemetry it needs doesn't exist on the target host. Packs for other use cases are on the roadmap.
 
@@ -39,23 +39,6 @@ CTID's list is deliberately generic -- it isn't aware of who Radegast is actuall
 
 We also keep the packs current with how ATT&CK itself evolves -- for instance, both OS packs use T1685 in place of the now-retired T1562 for Disable/Impair Defenses.
 
-## The actual tooling
-
-Once a technique's tier is decided, adding it to a pack is one command against our internal `populate_pack.py` tool, filtering the shared Sigma corpus by OS, severity, and technique ID:
-
-```bash
-python tools/populate_pack.py \
-  --os windows \
-  --pack essential \
-  --level critical high \
-  --technique T1059 T1547 T1053 T1543 T1082 T1685 T1003 T1105
-```
-
-Severity is filtered independently of technique -- Windows packs only include critical/high rules, keeping tier placement and rule quality as separate knobs. Appending `--sync` to any of these commands prunes rules that no longer match the current filter, so as the underlying Sigma corpus changes, packs don't quietly accumulate rules that were never a deliberate choice.
-
-## What this gets us
-
-The net effect is a rollout path we can defend line by line: every technique in a pack traces back to a CTID score, a deliberate tier placement, and (for the handful of exceptions) a documented reason it deviates from the mechanical filter. If a rule turns out to be too noisy, or ATT&CK adds a new sub-technique, or CTID re-ranks something, we re-run the populate command and `--sync` takes care of the rest -- the pack always reflects a decision we can point to, not just whatever happened to accumulate over time.
 
 If you want to stay updated about what is happening with Radegast EDR, consider:
 
