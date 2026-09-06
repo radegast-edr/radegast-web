@@ -1,0 +1,46 @@
+- version: "1.5.0r1"
+  hash_sha256: |
+    53adbfbadebefe015e7c0e98ddb49ee919856a3f2f2b6906b30516660018e7bf  linux-amd64.zip
+    4fb908fc51ec3131cd3062a7734234f44f10af7b110f604861b4298fb1544331  linux-arm64.zip
+    9e3364239a0d4970abc6c8d573ac8d4d72bf6a111b2f1e9b6c57e35377d4c0c4  windows-amd64.zip
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
+
+    iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdKZMACgkQa9UaMJ3z
+    Q8/zRw//YHz/kxECuo0TPlFezEZU0Olle+DxwbfTusRxM3M4RjgNSwPib7Hne93S
+    96borKIDVlLGav74gC5HeFXdmJSqxG9VXS4s0s+nS5zU8K1SxRlnc9A4QwfhJnrj
+    DBJf5BMho0fjzzulWHdvUn7xFiOiYJyXIUXPfX8ohJvklHQUEdl4pBQ0D4RdahUM
+    NLRjlcyi4ktzQeg/bIs5E1ggZcrAVR06oeKATQ2etAI+MCvCdgWNuUvqK1zZedtu
+    2JVRD3FhwbsgwFNYUa+fnqc6FczFi3Dm4Osgj/ndNVAMc2aysLqFvrVcBwWlILJ0
+    lEJQB/+rmyHryxcjsAcM/FbWF3qr+9+Q9ZLtG2P9mKoXVCjkLIQdpvbxEz0kevG6
+    Hc6MJC14uzh22REsA4DE6D2PxaIbBd0//EAdb7JB0WjOqNp4o4t7qtzmst2R61zL
+    MWEBjDJeNSgHuq/M640fK+AxZWZ3g8f9iB6cm90flixIcCN9RItL+VHY5QNfrXU1
+    +a7/KzB4kkKvmD+zininPE78G4nZeTmd3/Ir9L1JAYuYJY8X91yeXP9lGOHMNijg
+    iv1cQIMnH7srXZOR9CvnDuEeZNhdmAcOoFwtgp3Gbua3M6BHLFp4QaA+D+u9ur7n
+    DJ9oBQH8LBfoDuhXG/XUGtt4e4I1cNuIeQcwhFk+YQ4/EZcy/Ao=
+    =cQdz
+    -----END PGP SIGNATURE-----
+- version: "1.5.0"
+  hash_sha256: |
+    3fbb7ae71f3ce46a3524068e7f493e21ad98b4ac016eb199133ff4ac57c95972  linux-amd64.zip
+    6abc706a5c0e7f4f53a17bb5598e5aa1957a69de4c563bd114f554f64f8936ed  linux-arm64.zip
+    f13ab7d8fb7699eacd130f74013174a99965ed55846afb12e2a8d981e3a4f680  mac-amd64.zip
+    cb893ca8bd7fd05d1f70c021dde7c0a5d4dacfc2fe9ae8b1a8e8d3ed834f8cff  mac-m5.zip
+    f870a241b3b25cb47f00aac3b364694a53d9e3046738f813749e500521bf3a01  windows-amd64.zip
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
+
+    iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdKaIACgkQa9UaMJ3z
+    Q88uMhAAg+4szjA6fLDj5vDKxvgKAnt8/pryz1oRAYpYK72QT8zuOXBh4L1khneV
+    ToboV5NZbpbqHiSXThau8EWT0hjQUKtn4U++shBJyTJXctGQUNWGuLVBrNjGbZIK
+    077T1AKLAXLps1N2dL6o2WPJ6icQVgLBglYs3P7Si7Rmq8J3nF1rFT04pFmYozor
+    kc2KLu9pj9MwKsTm04knCNzXMzdaMtrcsZO8e4HUKXl/VnX4BWZVV+prOlPiRZ4d
+    GbI5SKVP0HZVD9hlEXExwWAFY5Zz6cWpeLCkgl3L5TH1YU1kCRPgkjFNAe7l6vck
+    tVdSLYjnLsl15xEEA8mIoVPai1BdTayiC5KVUfz42vJT9BFwKzxRT+evyVYLbcjm
+    qwzpu9OAzLSOo6Ic3rmCaH2xZgtBqE0sHciYYtxVzRRYskVGA+h15IyvP/rqXvf1
+    Az8zBuurWip+hvdVf+7t4cvzg7Fv3J+OObuMHjkkUD4wCGVWGbOqqEEHydfxK3jG
+    Ce4FiRVklbeBFQBuk/VDg2Q0yA8+PJRtvR7oVh3H0qhOUqU87K6qjPDAFhmt1QD7
+    W5lnVTtyFiRrk5zPd5CE1Z4aeddRRJ4mPO3GTC8g4IHAYKRJyeFDhPx5/1cIviqH
+    88+zhHMY+ZEf28A5+rpTmAeRFW6RkFt6GgRYIYMT8W/zMhTSeis=
+    =bHhy
+    -----END PGP SIGNATURE-----
