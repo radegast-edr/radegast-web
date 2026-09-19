@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /api/rustinel-releases.json
+---
+{{ site.data.rustninel-releases | jsonify }}
