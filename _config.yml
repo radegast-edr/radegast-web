@@ -1,5 +1,5 @@
 title: "Radegast EDR"
-description: "Open-source, privacy-first endpoint detection and response. All your EDR data is end-to-end encrypted."
+description: "Open-source, privacy-first EDR for small teams and home labs, with a device management console and extensive end-to-end encryption."
 url: "https://radegast.app"
 baseurl: ""
 
@@ -11,6 +11,7 @@ github_org: "https://github.com/radegast-edr"
 console_url: "https://console.radegast.app"
 docs_url: "https://docs.radegast.app"
 rustinel_url: "https://github.com/Karib0u/rustinel"
+status_url: "https://status.radegast.app"
 
 plugins:
   - jekyll-feed
@@ -33,3 +34,4 @@ exclude:
   - vendor/
   - "*.sh"
   - README.md
+  - IMPLEMENTATION_PLAN.md

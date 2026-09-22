@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | relative_url }}">
@@ -23,22 +21,12 @@
   {%- endif %}
 </head>
 <body>
-  <div class="scanlines"></div>
-  <div class="beta-banner">
-    <div class="container">
-      <span class="beta-badge">Beta</span>
-      <span class="beta-text">
-        Radegast EDR is currently under heavy construction &mdash; expect rough edges. Core functionality is in place and solid, but other features are still being developed.
-        You can <a href="{{ site.console_url }}" target="_blank" rel="noopener noreferrer">register to the console</a> to try Radegast EDR out and receive mail notifications about new features, or <a href="{{ '/rss.xml' | relative_url }}">subscribe to the RSS feed</a> to follow our blog.
-      </span>
-    </div>
-  </div>
+  {% include announcement.html %}
   {% include header.html %}
   <main class="site-main">
     {{ content }}
   </main>
   {% include footer.html %}
-  <script src="{{ '/assets/js/typing.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/modal.js' | relative_url }}"></script>
 </body>
 </html>

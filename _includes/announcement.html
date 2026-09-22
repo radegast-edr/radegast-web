@@ -1,0 +1,20 @@
+{% assign announcement = site.data.announcement %}
+{% assign notice_message = announcement.message | default: '' | strip %}
+{% if announcement.enabled == true and notice_message != '' %}
+<aside class="announcement" aria-label="Service notice">
+  <div class="container">
+    <span class="announcement-label">Service notice</span>
+    <span class="announcement-message">{{ notice_message | escape }}</span>
+    {% assign notice_label = announcement.link_label | default: '' | strip %}
+    {% assign notice_url = announcement.link_url | default: '' | strip %}
+    {% assign url_first = notice_url | slice: 0 %}
+    {% assign url_second = notice_url | slice: 1 %}
+    {% assign url_prefix = notice_url | slice: 0, 8 %}
+    {% if notice_label != '' and notice_url != '' %}
+      {% if url_prefix == 'https://' or url_first == '/' and url_second != '/' %}
+      <a href="{{ notice_url | escape }}">{{ notice_label | escape }} &rarr;</a>
+      {% endif %}
+    {% endif %}
+  </div>
+</aside>
+{% endif %}

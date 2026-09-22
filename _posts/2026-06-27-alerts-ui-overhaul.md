@@ -52,9 +52,9 @@ The Radegast Console is designed to be as easy to use as possible. This means in
 
 ![](/assets/screenshots/blog/alerts-overhaul/extended.png)
 
-## All E2EE
+## Alert data stays E2EE
 
-While doing this redesign, we kept our promise to keep everything E2EE. Your alert details are encrypted on your endpoints and decrypted only in your web browser; the Console never sees the raw content. Same goes for detection exclusions—only you, your teammates, and your devices are able to see what you are excluding in plain text. The only details that the server can see for each alert are the severity (required for sending notification emails) and the triggered rule ID (so that context can be shown in the alert details after decryption).
+While doing this redesign, we kept sensitive alert data E2EE. Your alert details are encrypted on your endpoints and decrypted only in your web browser; the Console never sees the raw content. Same goes for detection exclusions—only you, your teammates, and your devices are able to see what you are excluding in plain text. The only details that the server can see for each alert are the severity (required for sending notification emails) and the triggered rule ID (so that context can be shown in the alert details after decryption).
 
 If you want to stay updated about what is happening with Radegast EDR, consider:
 

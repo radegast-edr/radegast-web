@@ -1,310 +1,58 @@
-// ─── Site layout ───────────────────────────────────────────────────────────
-
-.site-main {
-  min-height: calc(100vh - 80px - 200px);
+.site-main { min-height: calc(100vh - 300px); }
+.container { width: 100%; max-width: $container-max; margin: 0 auto; padding: 0 $container-pad; }
+.announcement { padding: .8rem 0; border-bottom: 1px solid $yellow-warn; background: #302510; color: #fff1cf; font-size: .9rem; }
+.announcement .container { display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap; }
+.announcement-label { flex: 0 0 auto; font-family: $font-mono; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.announcement-message { color: inherit; }
+.announcement a { color: #fff1cf; font-weight: 650; }
+.site-header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid $border-color; background: rgba($bg-primary, .96); }
+.header-inner { display: flex; min-height: 72px; align-items: center; gap: 2rem; }
+.site-logo { color: $text-primary; font-size: 1.2rem; font-weight: 750; letter-spacing: -.03em; text-decoration: none; }
+.site-logo span { color: $green; }
+.site-header nav { display: flex; margin-left: auto; align-items: center; gap: 1.7rem; }
+.site-header nav a { color: $text-secondary; font-size: .92rem; font-weight: 550; text-decoration: none; }
+.site-header nav a:hover, .site-header nav a.active { color: $text-primary; }
+.header-actions { display: flex; align-items: center; gap: .75rem; }
+.nav-toggle { display: none; padding: .5rem; border: 0; background: none; color: $text-primary; cursor: pointer; }
+.nav-toggle span { display: block; width: 23px; height: 2px; margin: 5px 0; background: currentColor; }
+.site-footer { margin-top: 6rem; padding: 4rem 0 2rem; border-top: 1px solid $border-color; background: $bg-secondary; }
+.footer-inner { display: grid; grid-template-columns: minmax(280px, 1.7fr) 1fr 1.3fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-logo { margin-bottom: .65rem; font-size: 1.15rem; font-weight: 750; }
+.footer-brand p { max-width: 38rem; font-size: .92rem; }
+.footer-links h4 { margin-bottom: .85rem; color: $text-muted; font-family: $font-mono; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.footer-links ul { margin: 0; padding: 0; list-style: none; }
+.footer-links li { margin-bottom: .45rem; }
+.footer-links a { color: $text-secondary; font-size: .9rem; text-decoration: none; }
+.footer-links a:hover { color: $text-primary; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid $border-color; color: $text-muted; font-size: .8rem; }
+.footer-bottom a { color: $text-secondary; }
+.page-content, .post { padding: 5rem 0 1rem; }
+.page-header, .post-header { max-width: 780px; margin-bottom: 3.5rem; }
+.page-title, .post-title { margin-bottom: 1rem; }
+.page-description { max-width: 660px; color: $text-secondary; font-size: 1.16rem; }
+.post-meta { margin-top: 1rem; color: $text-muted; font-family: $font-mono; font-size: .8rem; }
+.page-body, .post-body { max-width: 780px; }
+.page-body > .wide, .post-body > .wide { width: min(1112px, calc(100vw - 3rem)); max-width: none; }
+.page-body h2, .post-body h2 { margin: 3.5rem 0 1rem; padding-bottom: .75rem; border-bottom: 1px solid $border-color; font-size: 1.8rem; }
+.page-body h3, .post-body h3 { margin: 2.25rem 0 .7rem; }
+.page-body p, .post-body p { margin-bottom: 1.25rem; }
+.post-body img { display: block; margin: 2rem 0; border: 1px solid $border-color; border-radius: 6px; }
+.post-footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid $border-color; }
+@media (max-width: 960px) {
+  .header-inner { gap: .75rem; }
+  .site-header nav { display: none; }
+  .nav-toggle { display: block; order: 3; }
+  .header-actions { margin-left: auto; }
+  .site-header.nav-open nav { position: absolute; top: 72px; right: 0; left: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.25rem 1.5rem 1.5rem; border-bottom: 1px solid $border-color; background: $bg-secondary; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
 }
-
-.container {
-  max-width: $container-max;
-  margin: 0 auto;
-  padding: 0 $container-pad;
-
-  @media (max-width: 768px) {
-    padding: 0 1rem;
-  }
-}
-
-// ─── Header / Nav ─────────────────────────────────────────────────────────
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba($bg-primary, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid $border-color;
-
-  > .container {
-    height: 64px;
-    display: flex;
-    align-items: center;
-  }
-
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 0;
-  }
-
-  .site-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: $font-mono;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: $text-primary;
-    text-decoration: none;
-
-    &:hover { color: $green; }
-
-    .logo-prefix {
-      color: $green;
-    }
-
-    .logo-cursor {
-      display: inline-block;
-      width: 2px;
-      height: 1.1em;
-      background: $green;
-      margin-left: 2px;
-      animation: blink 1.2s step-end infinite;
-      vertical-align: text-bottom;
-    }
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    flex: 1;
-
-    a {
-      font-family: $font-mono;
-      font-size: 0.85rem;
-      color: $text-secondary;
-      letter-spacing: 0.02em;
-      text-transform: lowercase;
-      transition: color $transition-fast;
-
-      &:hover { color: $green; }
-
-      &.active {
-        color: $green;
-        &::after {
-          content: '_';
-          display: inline-block;
-          animation: blink 1.2s step-end infinite;
-          margin-left: 1px;
-        }
-      }
-    }
-  }
-
-  .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.25rem;
-    color: $text-secondary;
-    flex-direction: column;
-    gap: 5px;
-
-    span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: currentColor;
-      transition: $transition-fast;
-    }
-
-    @media (max-width: 768px) {
-      display: flex;
-    }
-  }
-
-  @media (max-width: 768px) {
-    nav, .header-actions .btn:not(.btn-console) {
-      display: none;
-    }
-
-    &.nav-open {
-      nav {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: $bg-secondary;
-        border-bottom: 1px solid $border-color;
-        padding: 1rem 1.5rem 1.5rem;
-        gap: 1rem;
-        align-items: flex-start;
-
-        a { font-size: 0.95rem; }
-      }
-    }
-  }
-}
-
-// ─── Footer ───────────────────────────────────────────────────────────────
-
-.site-footer {
-  border-top: 1px solid $border-color;
-  background: $bg-secondary;
-  padding: 3rem 0 2rem;
-  margin-top: 6rem;
-
-  .footer-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  }
-
-  .footer-brand {
-    .footer-logo {
-      font-family: $font-mono;
-      font-weight: 700;
-      font-size: 1rem;
-      color: $text-primary;
-      margin-bottom: 0.5rem;
-
-      .logo-prefix { color: $green; }
-    }
-
-    p {
-      font-size: 0.875rem;
-      line-height: 1.6;
-    }
-  }
-
-  .footer-links {
-    h4 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: $text-muted;
-      margin-bottom: 0.75rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li { margin-bottom: 0.4rem; }
-
-      a {
-        font-size: 0.875rem;
-        color: $text-secondary;
-
-        &:hover { color: $green; }
-      }
-    }
-  }
-
-  .footer-links-community {
-    @media (min-width: 980px) {
-      ul {
-        columns: 2;
-        column-gap: 2rem;
-      }
-
-      li {
-        break-inside: avoid;
-      }
-    }
-  }
-
-  .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    border-top: 1px solid $border-color;
-    font-size: 0.8rem;
-    color: $text-muted;
-    font-family: $font-mono;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-
-    a { color: $text-muted; &:hover { color: $green; } }
-
-    .footer-powered {
-      color: $text-muted;
-      span { color: $green; }
-    }
-  }
-}
-
-// ─── Page / Post content ──────────────────────────────────────────────────
-
-.page-content,
-.post {
-  padding: 4rem 0;
-}
-
-.page-header,
-.post-header {
-  margin-bottom: 3rem;
-
-  .page-title,
-  .post-title {
-    color: $text-primary;
-    margin-bottom: 0.75rem;
-
-    &::before {
-      content: '# ';
-      color: $green;
-      font-size: 0.75em;
-    }
-  }
-
-  .page-description {
-    font-size: 1.1rem;
-    color: $text-secondary;
-    max-width: 640px;
-    margin-bottom: 0;
-  }
-}
-
-.post-meta {
-  font-family: $font-mono;
-  font-size: 0.8rem;
-  color: $text-muted;
-  margin-top: 0.5rem;
-}
-
-.page-body,
-.post-body {
-  h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid $border-color;
-    color: $cyan;
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: $green;
-  }
-
-  p { margin-bottom: 1.25rem; }
-}
-
-.post-footer {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid $border-color;
+@media (max-width: 560px) {
+  .container { padding: 0 1rem; }
+  .header-inner { min-height: 64px; }
+  .site-header.nav-open nav { top: 64px; }
+  .btn-console { padding: .55rem .75rem; font-size: .8rem; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-brand { grid-column: auto; }
+  .page-content, .post { padding-top: 3.5rem; }
 }

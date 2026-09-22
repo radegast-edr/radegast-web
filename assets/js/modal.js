@@ -10,6 +10,7 @@
   var modalNext = null;
   var triggers = [];
   var currentIndex = 0;
+  var activeTrigger = null;
 
   function initModal() {
     // Create modal elements
@@ -18,12 +19,16 @@
 
     modal = document.createElement('div');
     modal.className = 'modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-labelledby', 'screenshot-modal-caption');
 
     modalImage = document.createElement('img');
     modalImage.className = 'modal-image';
 
     modalCaption = document.createElement('div');
     modalCaption.className = 'modal-caption';
+    modalCaption.id = 'screenshot-modal-caption';
 
     modalClose = document.createElement('button');
     modalClose.className = 'modal-close';
@@ -61,6 +66,20 @@
         case 'Escape': closeModal(); break;
         case 'ArrowLeft': showPrev(); break;
         case 'ArrowRight': showNext(); break;
+        case 'Tab':
+          var controls = [modalClose, modalPrev, modalNext].filter(function(control) {
+            return !control.disabled;
+          });
+          var first = controls[0];
+          var last = controls[controls.length - 1];
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+          break;
       }
     });
 
@@ -86,17 +105,20 @@
   }
 
   function openModal(index) {
+    activeTrigger = triggers[index];
     currentIndex = index;
     updateModalContent();
     modalOverlay.classList.add('active');
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    modalClose.focus();
   }
 
   function closeModal() {
     modalOverlay.classList.remove('active');
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    if (activeTrigger) activeTrigger.focus();
   }
 
   function updateModalContent() {

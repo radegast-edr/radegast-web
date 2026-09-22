@@ -31,6 +31,19 @@ JEKYLL_NO_BUNDLER_REQUIRE=1 jekyll build
 
 Output is written to `_site/`.
 
+## Service notice
+
+The optional site-wide warning banner is controlled only by `_data/announcement.yml`. It is disabled by default. To publish an outage notice, edit the file and deploy a new build:
+
+```yaml
+enabled: true
+message: "The Radegast console is temporarily unavailable. We are working to restore service."
+link_label: "Read the update"
+link_url: "/blog/"
+```
+
+`message` is required when the banner is enabled. `link_label` and `link_url` are optional, but both are required to show a link. Links must be site-relative paths beginning with one slash or use HTTPS. Set `enabled: false`, then rebuild and deploy, to hide the notice again.
+
 ### Serve (live reload)
 
 ```sh

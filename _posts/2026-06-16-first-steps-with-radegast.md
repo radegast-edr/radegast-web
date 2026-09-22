@@ -43,14 +43,14 @@ So navigate to the **Groups** tab and identify your groups. In freshly created a
 
 Click the **Manage** button and add your device if is not already added.
 
-![Manage Group](/assets/screenshots/first-steps\manage_group.png)
+![Manage Group](/assets/screenshots/first-steps/manage_group.png)
 
 In the group's management page click the **Enable Pack** button and choose the pack that is matching your OS and the level of protection that you want.
 
-![Enable Pack](/assets/screenshots/first-steps\enable_pack.png)
+![Enable Pack](/assets/screenshots/first-steps/enable_pack.png)
 
 ## Notes
 
 You can browse all available detection packs by navigating to the **Packs** tab. From there, you can filter packs based on **Status**, **OS**, **False Positive Rate**, and **Level** to find the ones that best fit your environment and security needs.
 
-![Packs Tab](/assets/screenshots/first-steps\packs.png)
+![Packs Tab](/assets/screenshots/first-steps/packs.png)

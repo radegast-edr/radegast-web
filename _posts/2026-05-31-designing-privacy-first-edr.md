@@ -52,7 +52,7 @@ Let's look at each of them in detail.
 
 ### EDR Agent
 
-The EDR agent is probably the most important part of the stack because it is the part running all the detections and executing responses. For the detections to be useful, it must have high privileges within the system. Because of that, it needs to be trusted. In our stack, the software that plays this part is the amazing [Rustinel](https://github.com/Karib0u/rustinel) -- a single binary written in Rust and running as root that takes a folder with Sigma/YARA rules or IoCs, with hot-reloading enabled. It uses its high privileges to hook into system events and monitors for anything that matches any known detection. If it finds something, it records an event into a JSONL file and optionally kills the process that caused the detection to trigger. Notice that there is no communication with our backend at this stage -- this is an intentional decision to minimize the attack surface against this highly privileged piece of software.
+The EDR agent is probably the most important part of the stack because it is the part running all the detections and executing responses. For the detections to be useful, it must have high privileges within the system. Because of that, it needs to be trusted. In our stack, the software that plays this part is the amazing [Rustinel](https://github.com/Karib0u/rustinel) -- a single binary running as root that takes a folder with Sigma/YARA rules or IoCs, with hot-reloading enabled. It uses its high privileges to hook into system events and monitors for anything that matches any known detection. If it finds something, it records an event into a JSONL file and optionally kills the process that caused the detection to trigger. Notice that there is no communication with our backend at this stage -- this is an intentional decision to minimize the attack surface against this highly privileged piece of software.
 
 ### EDR Agent Connector
 
@@ -62,7 +62,7 @@ The defining feature of the [EDR agent connector](https://github.com/radegast-ed
 * Signs it using its own private key
 * Sends the encrypted alert to the console
 
-It is currently written in Python, with a planned rewrite in Rust for the future. Because it is the only piece of the stack running on the user's device with network access, it has the least privileges possible. The encryption part is handled using [age](https://age-encryption.org/) because of its ease of use and wide platform support.
+Because the connector is the only piece of the stack running on the user's device with network access, it has the least privileges possible. The encryption part is handled using [age](https://age-encryption.org/) because of its ease of use and wide platform support.
 
 ### Console Backend & Database
 

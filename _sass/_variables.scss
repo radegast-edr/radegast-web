@@ -1,31 +1,21 @@
-// Color palette
-$bg-primary:      #0a0a0a;
-$bg-secondary:    #0f1117;
-$bg-card:         #13161e;
-$bg-card-hover:   #1a1e28;
-$border-color:    #1e2330;
-$border-accent:   #00ff8822;
-
-$green:           #00ff88;
-$green-dim:       #00cc6a;
-$cyan:            #00d4ff;
-$cyan-dim:        #00a8cc;
-$red-alert:       #ff4444;
-$yellow-warn:     #ffcc00;
-
-$text-primary:    #e0e6f0;
-$text-secondary:  #8892a4;
-$text-muted:      #4a5568;
-$text-code:       #00ff88;
-
-// Typography
-$font-mono:       'JetBrains Mono', 'Fira Code', monospace;
-$font-body:       'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-
-// Spacing
-$container-max:   1200px;
-$container-pad:   2rem;
-
-// Transitions
+$bg-primary: #101513;
+$bg-secondary: #171e1a;
+$bg-card: #171e1a;
+$bg-card-hover: #1b241f;
+$border-color: #34443a;
+$green: #95e6af;
+$green-dim: #b6f3c9;
+$cyan: #a7ddc0;
+$cyan-dim: #88c6a5;
+$red-alert: #ff8d86;
+$yellow-warn: #f2cb70;
+$text-primary: #f2f5f0;
+$text-secondary: #b5c1b8;
+$text-muted: #98a99d;
+$text-code: #b6f3c9;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$container-max: 1160px;
+$container-pad: 1.5rem;
 $transition-fast: 150ms ease;
-$transition-med:  300ms ease;
+$transition-med: 220ms ease;
