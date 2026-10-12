@@ -3,23 +3,7 @@
     1795ebebf7181d433c425f8e1bad54f9464b466bdf9c2bbdec8be2a900e997c9  linux-amd64.zip
     74d9c4097e9067d5428f475efc18588901a67f5b57d8bb3df63a26734e972b23  linux-arm64.zip
     5ee50730edcd01c48b177dfd6bca07989c27fc685844b532b5af745b65b316c5  windows-amd64.zip
-  sign_gpg: |
-    -----BEGIN PGP SIGNATURE-----
-
-    iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmrGYw8ACgkQa9UaMJ3z
-    Q89+Jw//bWmIS7eTHJKPxjLRqLIPRrmueMkgdJuXF2+/zk6kxQ4ctJKhDxQZOp1M
-    JACPrHpmh2EeyBO0TMpiKX3bbpBtsaF8YD06cY4qtsU2RMhRaobffqOwaK3zSN5c
-    dpPGfXkNBVQ7BuYY5z63aMXzi2xxJ7yJSe3rr9nB7gdVF2/wuMZgcs7GzB+5K7CM
-    mo69bSl5K5LZwzi9xeC2Zp7xzT5eNQBGZbsliF0frYDWB1WsLckMPqhRjaf04+Au
-    dwYa+4Mi3ZqfI64sKA8+YfeMlNejKFQ/OLq7BREeVuODB7sQqxTtUZubXVB+PAK/
-    WAjDIN+v53jxrO+vah0dzCeoA1Y9bcGSDA3DrhZ3BfgU7BGh3w74BsJtcPVGGIMM
-    Pg6MgzgCV9hp7t1S5Km/SG4KJvMTFdIHaRKKhPUQtPZTBlvKOcf60AtJqLcfA1oO
-    kpen3YcEqOR4q6f+sUqgw4sHn1Rsui6HxNIkASzfPIg6KFJF8cMUYhgjEsS2peZC
-    D0cP7IffYh99yMWszhT196RbKfhLUqDs1ZqJXoIrUbjrH1Bo3oD8bW5FB/XeoA6X
-    jewb4cGYpXKrYvc2dNJ0suYj8Jvt+nRbpL37ealJYzKeNHPJLPY/fidQzA2Ssjvx
-    xnYbmxxW0FYkCQOaVVs1Vffzg0GUR55f8AqsI+IhwWb8Az39rv0=
-    =KoDM
-    -----END PGP SIGNATURE-----
+  sign_gpg: "Breaking change, no automatic update for this release."
 - version: "1.9.1"
   hash_sha256: |
     ca989461e50872f05f04537fcace3151791aa3c5af628408fa65837c42ffe9b6  linux-amd64.zip
@@ -27,564 +11,302 @@
     ed7ee7991a9a214f96e4e0597f1aa9300736aca132130847d9e62197b9598857  mac-amd64.zip
     cba4fa48f3e5a54fb83b662d5f7727ba14ba394c14a6f255b03b3180f9332d4c  mac-m5.zip
     7297e6b239ece155487f21273ab46f8133b7df54c86d6921cbe4242055116135  windows-amd64.zip
+  sign_gpg: "Breaking change, no automatic update for this release."
+- version: "1.8.0r2"
+  hash_sha256: |
+    f9a8c5bd2d6e15b1a7a4c062a6466473b3d1aee0fd74a895ad5fad48e29b376f  linux-amd64.zip
+    4790c03a6b86336536d7eb9a7060c56cc5e284ca7d6d25961934d3d65776798e  linux-arm64.zip
+    c321b8d810794eead9c55bb1ebfe4daa703862e848ed648f354efc60694ecd30  windows-amd64.zip
   sign_gpg: |
     -----BEGIN PGP SIGNATURE-----
 
-    iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmrGYxUACgkQa9UaMJ3z
-    Q8/0ZA/+N6Ro36bXg4+sFKnLztBVKZYMhhKAi4+YASR4Cah+EoJgTvIQN80p3uji
-    0wB/ZiuVy8Sw90tsppTxWWE3Jy51wj9LhCfDZJJlWS7vAaNjj3OkbCweOFmHK+MR
-    XpjLuP5C053JpEyRX+fxjeuacimogPcwru/5/yAYNK5jn0Ayes27dkUIAcV+Sv3J
-    wMm3YyoKJkIpZevxcfeIyFCZwR+N7OpvYMTaQT3uYKs5MbnkAFs5MDBW+n8jQ8KQ
-    QuupVjl8rfIVtIWqKau0749+aZT91SDkfAK6I05sXP4PRnmNwKsmmArIgNUsJQ+/
-    H8bL8/btw8aaiOdiwnOtq80fNAFaUW34AJ3hYRVS/hHMeLmsUfRK/IBlUaozU9/p
-    2qXWWh+DUnNX6+nF/LzTZADYFqiYUJRXkSg9M8IGJT8uzrhv2bv+E/hCG8hTgH94
-    CVY8+T3V2vqTCqQVRmngQ7zlsJ9z/AthPmpb+XQcNCF+GZ4Z43DsGRLIbGN2bg7a
-    ZRM9Lib5lgvPWkpuBJNu5woOObJ1yjs4br1VNpbudPXxEzw3jf853FzbBbH8CWL0
-    X7fQUbDV7y4t87+JmGjWxkxUTITr9zS9oZZ4Btaecopsu9WeYqCBk6y81v2Id/tV
-    +jCGKfRV4o2Tl3UWPa6dASgeP/xNf1hs1S80HtXcVU7yZA10v7c=
-    =wJoR
-    -----END PGP SIGNATURE-----
-- version: 1.8.0r2
-  hash_sha256: 'f9a8c5bd2d6e15b1a7a4c062a6466473b3d1aee0fd74a895ad5fad48e29b376f  linux-amd64.zip
-
-    4790c03a6b86336536d7eb9a7060c56cc5e284ca7d6d25961934d3d65776798e  linux-arm64.zip
-
-    c321b8d810794eead9c55bb1ebfe4daa703862e848ed648f354efc60694ecd30  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
-
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqwNaMACgkQa9UaMJ3z
-
     Q8/tnxAAnbA0etDrScuwWDfY3hR1qkkZNRl9z1dD+sXEclt5poeDcHt2iDJl+SYA
-
     Kl0kSi8LqlcQ/cikMu4yT3tM4XKy8JAPjPwAGBKCy4zckRhXIQHIu9+m1WnYacVM
-
     P6AyW/hul2qrEWjuBAYIRwRSAWTRQx44IknGVJbyAQLOlNBV+2ALM7tuANToPsQv
-
     Khp9+x0li5MYMr4CUqQhowvT7sQJeexawTzef4EqWHg6alZwtXTw8bTeVdN28DK3
-
     v064anLJfFB4KOOTpyr8pFlaWTSDBmsAVNtg+Hj3zINoKakzfDCl8RFsvG3cEXRF
-
     LDgszZ+DLKtfsf6GzJ/ibCnlWHJqmMiYYo6AnfTRAH4gywkWJxSKxUMdVFwA5F/M
-
     PrLZzbOW08t8dlaTXhX+AQrd2U0AsTbr93/sfZl44vgd1nnGVNmb6QgrxvXZ9Jn1
-
     dYSoi7Y+xFyCi+TVL4va7mUycGqcFOR8MAKXi0qjRfJZGf7SpmwKsL1JKmppyxY9
-
     5FNrz/v/bIpkPzf4NA4CNQWte/OJoVcX0617lDczMarPYAQT9k1vaLh3Tmh/EBPS
-
     91gqfd5KDWQRqBq3WV/jvae5TnqJwLnMZJw4I4skmsAwZ7bLJHgf68gp9KuatUq+
-
     baL3RDVZJm5YsRkaLSJhaOTTMDnumnYHALDTKA9LM4YSzDt/SG8=
-
     =uZg5
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.8.0r1
-  hash_sha256: '521345aa5fa6fb3d8204d8a6064c87e1b18da5579019d18880f3f4df14644a21  linux-amd64.zip
-
+- version: "1.8.0r1"
+  hash_sha256: |
+    521345aa5fa6fb3d8204d8a6064c87e1b18da5579019d18880f3f4df14644a21  linux-amd64.zip
     3c6654749a77b75cf5a7185bd03ec8ca2261f9a66ea6c06b781ea82ba8c76cd6  linux-arm64.zip
-
     e222d0b3b334df0f3bd27194c6ee2adbf5651e60780aed8d68ecc697593b6fd9  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqwGW0ACgkQa9UaMJ3z
-
     Q8+5lw//VxInVH2ndh2kcNiqQsdbNAowhY6uGvTCEyZJSE5e9Wsdt90s38JFMHoD
-
     saPYANiVLmLG6Zldh4ZLUxQmRwN8QWKg33Wha9zZNvcKp4lh57TdT+yaGQqoqhTS
-
     WqLEu0rsoOmmYDzIJz7iyd6+r957UiNgFhiBkcMa/97i5wydRyD1BdDfac5dTRoH
-
     b4YYTOHj30wmeYdPqpYXOwnftKDfNc+7SKcrMCrIDJDqmzzfdgM6xEVJGzuD1geN
-
     yMu4ea+wORZ8k2DXwvUo2FJBOQ3zPs2Fp3pdjozx9ss7bZMl+4VegrTLSGBzpIQ1
-
     RloTXa82yQ3NDPaSA8FdnyDEEExH6sTihzNToESVX3842q61OubJYO5vsn/h0WpJ
-
     oMqVuw28H0f39+Zg3qPTOeJ5FZvN76J1ftOTWjvN/HBkVv5BgPm4PtAJMIwhvW2E
-
     kxQdrK0x7iYf23t/CEOqn0YBKmXVO7joTYBraMK2w0rHlS6/po4zBd2dLXqTDrfZ
-
     Lf9zeb+6WN70ormdhju84gOwsUTW5xmnVuiob6/HALaUZLcKtvvKJ8afMHfYiO4x
-
     +a7/vrCt68v++R/gyF09sDGRJuvdJaFYzgLbBmEEjpeyKOjv8OT2vPTn8HUbOGEh
-
     eRgdkIXFtaIjPxeDJ3+YyV85dXJqKV8qbWC48lSgo2QWmGaqoiY=
-
     =ngG8
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.8.0
-  hash_sha256: '26619e08f0c80c1cc141fbd27e05595f9443681ae7e3f0b982418eb1fdbc40c6  linux-amd64.zip
-
+- version: "1.8.0"
+  hash_sha256: |
+    26619e08f0c80c1cc141fbd27e05595f9443681ae7e3f0b982418eb1fdbc40c6  linux-amd64.zip
     90e2d9c83d8bfa0d7af57397dc34841b4acb327eb9d82e31abb2c12dedd4c4bc  linux-arm64.zip
-
     46152635da6a868b2bd13712369a3cffe5aca09f323ff2027d6d65bc130cc222  mac-amd64.zip
-
     1bdb76a4ecbe1a4000c894b47fed41cb4a805e37db802c5719e7d5be885dc344  mac-m5.zip
-
     aaca6ec9a3ea01da133709fa557863264604c5d2358f23db0a09f764be827099  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqwNbMACgkQa9UaMJ3z
-
     Q89W9A//agSv+6q5+E9yQIP5r8cSytUH2Ygoudi50hipu/dsjhdcjYPGRaBCLE7f
-
     dUG0cswN52s49BraNr6xvcR5qUfvN/kJXNMoubWwSjgJkPdG8yb4AilctllfRtW2
-
     KkM9eBm7mvGU6/WOrBnQmlhSb8OdvbzATy3wfN3YhYNpyxIV7upli6I5NO4m4/5i
-
     1CQM4H8p5u8wuxJy+rHDrkdUvpkcRFT2OmBubkF6XdgCZYUaGdEMvGHd6hlVNQmT
-
     AxHh9ZSxaydsw2zv1O4XWOkfknKV5caL8L92voF9WJA8gYrrFRuRStm26NuNYVxf
-
     6w8pCsrLQQFXMdMalCJvMQKmF6qW4+Cya7ePzI5ALJIrSYZ37V3wdNVXSBZRyUbN
-
     k8ATLiBdNFbe6EERLdcx9ZGpwJGFO4PM9aTx8Dn/SMF3M8mlGMiklH/VCKQryCOd
-
     DpnOLSOOh7UX486pQag+9/YbgfF75vJSkL6w8D6x3GabDFrNBj61R6duKTCOyDGA
-
     QrqIoZ6niRvsdSeOabYMslYb7K5mEX0DVH0F3M6UPlqV5r5Lz1zzdu7mkyeE2KMI
-
     TJpxsN7rdLOM8DYQcwgN8gtRci2ORU6ZGPeM+jflk1petfC8HtCa5P+niezQpwsB
-
     Ma8W70lwjA0E+0I9vkTaZRpKIItaxP4lOA0Ot73ssZ6SlmKy3MA=
-
     =gtKt
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.7.1r1
-  hash_sha256: '09266cd8e99372039b360bee489823010b24213c11e91a7ff5b5e8494d4dcbbe  linux-amd64.zip
-
+- version: "1.7.1r1"
+  hash_sha256: |
+    09266cd8e99372039b360bee489823010b24213c11e91a7ff5b5e8494d4dcbbe  linux-amd64.zip
     4e6e0ed3837f17c99a078b4cbb12395b9482e376708ae11f78f89c3a28f9075f  linux-arm64.zip
-
     3efce81ae9fc49a0d4f86afa5964413f9465410f68570605ccf8e803f609a9b7  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqm5G4ACgkQa9UaMJ3z
-
     Q8+fpA/8COqfGsBXRDn+bDZEoFUvjPN7daPdIrKnUgM6e5em2/VXMi41EDhZT6oh
-
     RNoEvyGqCqOFRMubHE8ZBOALeqTLQICm+nSZFANuUKmhnUJcSkbGmtNvBcLflNrF
-
     167//ySxt6dYZR0IPS/P92XD/NhKCOd/y1hZ5qreE24jknu3I/BbQ4fIkteoiqaC
-
     o34aM/oaZ4FB5lavuaRk1IyU0jdGvvTmnFjK7E/OJVpBgjvJepx6ZDjfemeO8F6l
-
     cTC+FlTS41zg8tZmmX/73fvgz/XyI8awKVLwYySGh5sHk/vUUSemhotEPOYyu7U9
-
     X6347lN7E8btL3nIMyMKwrLmq3nR4PSAYHkBOl/mazNwx3edWvqCT26DtKyaPuMe
-
     E5MYWnyOwMDufPDy8rt/G2vQ+awcY0kv4jvtZ+z8YOiE9DyZ7rDTmUKw1xMSBdhj
-
     d7UGV6iygrOlLxVyjQjgGtO8KA8FEbHrN6e7M9VUMhoJ143HiizlzCFo45Cs/brU
-
     ygqTwXhS3ZUgAjXNXCbUI3a1eJdnirNn4ylXJzrNay6aqvLInJnAI/nIgFf0dsO8
-
     uKRvzmzDQuJldmJyaPhhVZdK04bmJBDFtZ3At6EX8//3MwUNH1W+utt1tgK5Lq3b
-
     VFP5B35ilWiyJC0OHBAA8Wb0PZ6qcyjGyvuwftQuJcsdTRJwyk4=
-
     =ol9F
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.7.1
-  hash_sha256: 'f927b875f7ce0119c96d2fb2b57582bdca5a8c7658deae2b8c6f1e65826ebea6  linux-amd64.zip
-
+- version: "1.7.1"
+  hash_sha256: |
+    f927b875f7ce0119c96d2fb2b57582bdca5a8c7658deae2b8c6f1e65826ebea6  linux-amd64.zip
     8e9d84728e67eb2cbcb0750058d0f3bea9be474fe14846653f6ae74eae296811  linux-arm64.zip
-
     a44d05a71ab7c76e3609c6f635cb1fbe77dd7c73e6d3e43d2fda56dcff2c809f  mac-amd64.zip
-
     97e0aa5a04ceb808d674cbdd108a64e9bae1674eb0beae308395310500a3779b  mac-m5.zip
-
     70a7f9273770237da051d9dfa9b53d3640e106d45235673f2ec18b03a11edc62  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqm5H0ACgkQa9UaMJ3z
-
     Q89joA/+PHukpzXiQJEck6iIqrJMcKeGETzcqeo30TKo2I2sGkeAqWd0hn6FbPxQ
-
     brWoOFWOe8E0E/wnSTnfTX+5Up/vwqjVnVQZigtKx4szCxY/CmZtQ9xPoQFwIbOh
-
     qlbHqH0DqEJUVrSORIAn/5Uf+QUptz+UENSSkAq3Q+GZjr82CHT6dMVCZSVm2uTP
-
     l7V4QI/d2KXXupJSJ/IYIeZxSGjvn0SI6lweq9GFsGiV5ctREfvgtKRcOsdEPcpI
-
     HkQaecGFELoEWE1GHYYpy2awAhuMLA5yk4fWXCEQhUw946i5fKT2G8r/8QtQJ+Ga
-
     1yG7gGr3q3x13e0LxP4XHO6lBJypfdEqYybKXIrfFw9w+gogqJ+Dg2TcjN51C4GQ
-
     g5vVKO4qHqrERPUKeWiJPcFaHqU4RkZZKE2BFd3b+lqEuVKYVIYgDWhUwNF8Tkbw
-
     ZJeQYYP+101Gv5sjVsWOdcL/9ODvjVSDLWItGIngdDm2kcInwCoGyNzuSj6ziXCy
-
     uumLMnQHJCeOhK9QbqGoKK7qtxEr6GpcQdyMLsuokKjQl3HuxlrK8A19j7AX2phy
-
     mMeTLAaJ7fqHYWbrj4etN9rJwrGugWzw0GIO8CVixZ/xwg1r8HmiPCkch9jFBXDh
-
     ErkMMsVhKmuZieaRcslREm1k6ZuhhBhkqflOkIjFTl0rw46fhFg=
-
     =EpuK
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.7.0r1
-  hash_sha256: '859de61af40ea0b3f836af6d8eb801d5ed25e7582f2f7f47e0ffe3d2e149bdc7  linux-amd64.zip
-
+- version: "1.7.0r1"
+  hash_sha256: |
+    859de61af40ea0b3f836af6d8eb801d5ed25e7582f2f7f47e0ffe3d2e149bdc7  linux-amd64.zip
     1f0d5610a29bd70198e7fe8c31d82c9acb39d23b7e659cdab9646dc117466674  linux-arm64.zip
-
     817cacddcc91691b7691e03060c2dfe5a04325df8805434c88032b70b06519d9  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqlrzoACgkQa9UaMJ3z
-
     Q88Zwg//QYcKFcWIMnWFozaGozBD9Z+ZxjT9DlgBuaMY+XSejFCJUedjlYvGu+BY
-
     32v7pvF817hRUeaSk+Rai0fAC6uROycFWHJLTMW9kZs+JkLnJSjxBOkVUelH9Xzg
-
     GCOVHja40xrgBFFqz9/mqK8g8uHWhEdWi3X7ew1yAAyJlDafHlILyIpos0I7C+81
-
     oocEYz5Pl79WQXKSXFrh7Oy4IhzRMWth4GFkA4UalJGS1ZBhkqL5iNGrr1zBhVXI
-
     Pl8oIHuZtCXN9UELiTrZBzpwHEm6lok1iXsYfPzW/qrR8pLE7SOeaV5MjZ+Zvk83
-
     +dWU4DIRAaJoGI/eeJMajU3uZ6CeNlCo6ML7x2O9xNROghjJR7o/35L/Ud8+La3U
-
     uqoZ8Xjgxb6mHP0XDD7RarQO+ONgG6+aSKdGMygh5kQpDDDApDlRPZtft9pjoPpk
-
     4bqu2j6C1dL/5A0U11lqSliVvbSpewzTyEkZaQPMs8rY1yF7OHTz8j2NTVk/Ijm+
-
     a1Wz8XpKJLBD836M83Pg3g3TOa6g2d4aYFmW7UZyl87Y0Uoc41mHvL5amRhAKZD8
-
     jduFpml0Me3kYEbWOl3OM6yatzy+H7dib7/apNFScfl22ULGsxdf83H40gvnGMJG
-
     8o/SVYZIoGMor0gjjbi/TxSlMpY3KmKwaitCTnV/Pq+H7B96YJs=
-
     =Hoq5
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.7.0
-  hash_sha256: '5155319fe0c1dd1cc1d69599bc3211063c6e117445ade11b35e2669651874343  linux-amd64.zip
-
+- version: "1.7.0"
+  hash_sha256: |
+    5155319fe0c1dd1cc1d69599bc3211063c6e117445ade11b35e2669651874343  linux-amd64.zip
     68a76eb4576f63c694cd31970a9f80b543ef911bd89ff7b961ea5008f1ff2c66  linux-arm64.zip
-
     05a188e91cc578bb25014f4dfd76fbead61baaef0e2c7842855c762c6802941c  mac-amd64.zip
-
     b0e72760442d92c0cd2888ac596279744d0fa1b1cacdb128947a57ba2791ed22  mac-m5.zip
-
     ca9ea0b9865f23d87075e60468d4c527d82bcdb40e7ccf2647433d7fc2104f56  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqlr0cACgkQa9UaMJ3z
-
     Q8+RcBAAmIPEXPpkNuhn4z/Dq0JolpKcyO7YWGqR5uG9l9rZWIqjhvDvOQARpSnw
-
     k+W8LgbwR71lQlZLX/wW/9SxaMNp9aPwc4Zv7h5ZaRIylIFFJ2dnFEOqBd64tU6r
-
     FTXUO73Kaxkll1Ea2jcQVkGD99ngEMSzfR9IC51/YcAcuBoxGJVN+y1wb1/M/MH0
-
     c4ut5xtDaWCMORpLrIM7KAVlbc1cjX0eISpYM9q6PGNOTaGrJqVlVPAyxSzXm4LP
-
     RwhGty5q1eqxP4Fne0XjOzzY3tO31lHz5LLSGLoHeSG9yud0Nb77helVObWRSDIS
-
     E5AVa8qd6lWMjdbp7FjulL34InGmZVGdtdOKCZvSsG+9fA9Zfx6Zk777FCnaZCGt
-
     /j1kRAe2oWOQDB4inBbneh3WZd4bWQJExkVK4vczTB4WeEDdPHKPbWgeV/b9WhJb
-
     0xbrzFoVX7V6IPa6cZtzrvyFbOZbymRMSaOWqaunsIjVwkEplReNz62TVg2olPsN
-
     TF7I0chNfQ6vIB/XwjLy1KvKfK8hc9UZ+g842H05QpytgXRxXYS/JwLCusgrbWl+
-
     6lD062oNuODk+UfhplJq3YzN/9f11ZiLomFUVCa/J30kWy8/1NrEocHlvua0MLoj
-
     Ocb0nSo9vKPtslrsZMPJGXHrhYKXSdQKX6yAdHKltQ5LhPhZuo0=
-
     =bIG+
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.6.0r1
-  hash_sha256: '4d159d7c6b69666341e7dfbbecac0f71008529d10a325d0aafefc459754d9257  linux-amd64.zip
-
+- version: "1.6.0r1"
+  hash_sha256: |
+    4d159d7c6b69666341e7dfbbecac0f71008529d10a325d0aafefc459754d9257  linux-amd64.zip
     254accf5555942f39a6da221dc1988cd18b390c4b436ab98058717605980fbf7  linux-arm64.zip
-
     90ff168355b4e8d1c46096ba1396eb6d0aa4ec156b514216848827884aa55f4a  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqizdgACgkQa9UaMJ3z
-
     Q8/myxAAocOsMicoYsMk/iyU1FpcgeEHx3TwxWH2oDf0g9KcXHqpy6NT+PFiReh8
-
     uSK7w8OkyuqVGVTySuW8Dpq7YYpOlTmBqWjLrOEOqp/Q52NBITHBQnkuLLCwx5oJ
-
     Y9+pn0AYT4sTgas5W01F1x4y67hdJ4QYndDU7HvvUkNVQqGJii1pdHedp555xVUi
-
     BiI1yabbFTQlMNNjXfRSHzVvGLenlUPAc45aHsquVhtH0jctKSGVnKTTou3C7Rxm
-
     j6VF0/DZtLnQEFmKKKRZU/S/efl3Vblf959I/zfoDE2eVBHmxJUkp6dfaOwwiUOK
-
     Br/EUSbtOyjloqKnjqrjHBdJrf3RdDGxKGVNvyCRgVXRqHIa7EbM49NJ0stCEl4g
-
     4Qlu/g0T4mbsryUXfz/18vdrJHLF1tMbcMLrliaguPzaEoJpkF06vpEN41jcyT9i
-
     vAAiAn5kTufdvtNdqTRva3/efjdYVMLl2bhhVyEPrDGzjPEl5QWyG4vOuKkZVqYE
-
     JtlBx2BdEo8dVhXHLXrPhmdIDXTiYuUc7pmhquigLMqF0FVoGXJeXvuQUK/D6ksz
-
     yOhko7WfpAEMHj2VIn2HPxO/RFWVTdYYa8tA7Vy7rmNqp6cLK9MOxFTPv8exx6zm
-
     jqMy88sDbODT5dqrjMUBrF1/ZlsRrWfleCwhvAzMlxvBmJdT9oI=
-
     =iaEo
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.6.0
-  hash_sha256: '2e511e99750c859b7cffa938dbea6e95e375e6c3703c5d2bc10e24366e641d92  linux-amd64.zip
-
+- version: "1.6.0"
+  hash_sha256: |
+    2e511e99750c859b7cffa938dbea6e95e375e6c3703c5d2bc10e24366e641d92  linux-amd64.zip
     e263c58b68895588976be44e617f6b7bb8657291da0ebfed095a47de110eb84b  linux-arm64.zip
-
     4a1f49304c408cf5f426a736a0e5e29cb94501d143b3f31318403265fa26dd1f  mac-amd64.zip
-
     17c5f2303c7dd18e527de5d84864e11ff885e7aec0203ecb4e698535e48a9b1c  mac-m5.zip
-
     dbf04abe998fedec750f7b54e616ecae1397398c873f3f28237ccabedc9d103e  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqizegACgkQa9UaMJ3z
-
     Q8+kvQ/+PgTemCi6UDNotADajuYX2eVAYaNJQs6kUuY0dxwbqM+KmkBZY7mTk7aM
-
     83/5hdQxDtj7oeSuAzP18vsfOH0Aw1FN/zthAALiYivXM7nWeskXB9Yogmk843J+
-
     Djgs/J5I/85R34na1V1h5cqbC3627Gfw1g7GChAGf2g0HSxCtce8Ec9ZI+I98X6c
-
     b+V02nfL1R0cZTTFqDZmA7V+8B12GiwHc4cSx6UFFABvCQnzBEmHEZF5gxYIkBI/
-
     H9QOrU85WYPcNfwvVbnmsDtW9kdj9SzkoXiwquMnwPscPac6hRcIZN2kD4w2gcrb
-
     +xx6+C3EgSFyUQOgWWRnVpwlE4KvbNWpqB7SkhKBmB+1J5+0bqp1/OXGLcyxORvK
-
     YjDzU50MfJNNBwLvBt/J0+3Hx3mCtXfdZnrLxLNKdo1YXgKzpdMc+EkSjK3i2978
-
     hvBS7/LRvK+wjMJ+/8HMHILpr2JXFVCk9ar33hTHxXsejykNRYRweh/RUcmdmA3a
-
     wJBzKZAOnAXjhORDs879tjU52oKomMw4bBAG7cywwUVybyPUR1xicNScJbiXg1Nv
-
     zSCIy7rQ5ILQvS+yCg017DEErzlzqdt7jwgLVh16gaaFDULfw651p0nf/+pVfjxo
-
     LsnkHa5ZXYLOw8cTVtF5zhBPcko4mEwkCekN96Hcm6yfBSQHKeE=
-
     =rPbf
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.5.1r1
-  hash_sha256: '1a02f15a781f0fa342a610f73e0c2c3e0835c21bb8993d6ce10a517c9bbf40b7  linux-amd64.zip
-
+- version: "1.5.1r1"
+  hash_sha256: |
+    1a02f15a781f0fa342a610f73e0c2c3e0835c21bb8993d6ce10a517c9bbf40b7  linux-amd64.zip
     6fd72688e53c949719dcc250c5f2653d421045862496a616881d06cd36505bd4  linux-arm64.zip
-
     7434da6f91bedbe233a16720747358ff938313bde46ff5ccb6882071981e1004  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdgAQACgkQa9UaMJ3z
-
     Q8+3kA//YhOYPL9AuKOu8iLzt1P4ITTNjlmMVnyIPFRZniew/+i69OrjvQ/CyKXv
-
     9vuxreo077Hf9IHorWl8QthrkMw4SYaQTWNGATb0XG5bfa0zVLpskdKKfKH0Y/1A
-
     rDBgjUcBlpdTVSqHM1bze4K8q8xQjTICBVL6RWok2fU1zw7zff48HrVOmseGu5aO
-
     CjM0O4aSXjufSsqW5tew8dUeVEkxTub22Ol/GIuv644+RKIeyENM6+IaYp0zlrFQ
-
     012WMR6t9jvsCI6vb54z/h3dzljhrMGwDEqOnmfnvBbctizYTyP49h6lqE35ITiA
-
     EM3a3bp04c8OpHHOu89ikFqieP6+stVz+UJIOhQJpZaqBuLn8uHlCj15QQeyrGQa
-
     GyvTsIcARpC+rodHE52iL4ua8vFrVv0ltPebL1Y5m2vT0UJzADZNRM9HHMOsydo7
-
     JY4XW/LdtAMz5iYijt39vNhciOkreZrYa4aCRD3PV3ysVb6w3xtCpBJaxLFRMkI6
-
     JlkqOlSaubDp264iPH4jbz40M6/cDJgekUNyzWVyfyUFSscZGmVzFohjdJuiTOV9
-
     lJCcvtLS4pNL57UIfDKcKVgFjz7n1zF1CVGqHdTLARsYT/noHSQ+HF1JmNYuqoRE
-
     AtPrvlGyBJNx6M6CMAjWl7dCun/pngekCCx73kad5EU8G1t4+Pw=
-
     =unzb
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.5.1
-  hash_sha256: 'b428180d3dc5489c3ea8c3e26c25ec86177fe156adaf049de88a2635570115cb  linux-amd64.zip
-
+- version: "1.5.1"
+  hash_sha256: |
+    b428180d3dc5489c3ea8c3e26c25ec86177fe156adaf049de88a2635570115cb  linux-amd64.zip
     e781ec7f62426e1ee4f3bc838ec85781b78f151cb4544f1237a5a6db927f9acf  linux-arm64.zip
-
     0b2e327a7528d26d81cdec0729ddf98d17423d811c482ab3aed9e5fa79a5675b  mac-amd64.zip
-
     3323cca0c8a23a9e1430280ea17ce6d74e5ea47fc5bd43525bb1ca0de9b584f9  mac-m5.zip
-
     8c721046700c72b88d0d902b5e0db902d736b82200e1a4b6f28686397d32ba1c  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdgBEACgkQa9UaMJ3z
-
     Q88emA/+IeuUiqeVgI5eUe6bGyIgpl2dvCG4qZDUA7zc2bfEZny+uKjg3S3Gu3Mv
-
     7NYazFDoYEMM0dR5LkNisLWfALrg15b7t+S4n1evO6aSOOpTeWt1KKDtwLfVfLCp
-
     v0Q/QEOUdiqbmz1nS/vOq3vqHLw73iXJaUa8uXKa6ppefiN6GlXrZnlHUqTcI/az
-
     WDlRsCaStZCxe4GH24caolFtwwI9ttLFCL8C0z65U+4ZF5LxmQkJJTEULBO57N4Z
-
     Ck6jLvrIGNrpsCgWxkLmPpru6DTEjZSzu1UOKPZcZIF6G7cnkE7hlyFQ1uQWpe3q
-
     6GMhfbCUC22SyXITpkdfqxUPnVljc3YB3f9sW7FmIAdti5haFOGrF3DqKix8xdZV
-
     bPyMe7r0mmkYEV+QGWp+zL0b4+r63X9Hufg9XuaEjSWTERMzLAoYL/Mr991LsZXe
-
     eRyuqnyl2b2suRDVHK6kDItCRSXrgZ8BAKPwFsiZ0DBgYXoRLT/4faCce4uAdXAv
-
     g3MwJAGCxZermy4eZ1WOCEtvrtjrNfo7SWC/zbd1gofI321CIRibyfqbHksk+Q90
-
     hB0NgKFO2wTfP/Jv8jm41YZL/j5VnX9km9guBsuhPhepuVMhNHlWominIuprussX
-
     ht62IaPXrz4UYEEyLuFIpXGzCSU21ySQf++SPvrntJsU296a2UQ=
-
     =bX9X
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.5.0r1
-  hash_sha256: '53adbfbadebefe015e7c0e98ddb49ee919856a3f2f2b6906b30516660018e7bf  linux-amd64.zip
-
+- version: "1.5.0r1"
+  hash_sha256: |
+    53adbfbadebefe015e7c0e98ddb49ee919856a3f2f2b6906b30516660018e7bf  linux-amd64.zip
     4fb908fc51ec3131cd3062a7734234f44f10af7b110f604861b4298fb1544331  linux-arm64.zip
-
     9e3364239a0d4970abc6c8d573ac8d4d72bf6a111b2f1e9b6c57e35377d4c0c4  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdKZMACgkQa9UaMJ3z
-
     Q8/zRw//YHz/kxECuo0TPlFezEZU0Olle+DxwbfTusRxM3M4RjgNSwPib7Hne93S
-
     96borKIDVlLGav74gC5HeFXdmJSqxG9VXS4s0s+nS5zU8K1SxRlnc9A4QwfhJnrj
-
     DBJf5BMho0fjzzulWHdvUn7xFiOiYJyXIUXPfX8ohJvklHQUEdl4pBQ0D4RdahUM
-
     NLRjlcyi4ktzQeg/bIs5E1ggZcrAVR06oeKATQ2etAI+MCvCdgWNuUvqK1zZedtu
-
     2JVRD3FhwbsgwFNYUa+fnqc6FczFi3Dm4Osgj/ndNVAMc2aysLqFvrVcBwWlILJ0
-
     lEJQB/+rmyHryxcjsAcM/FbWF3qr+9+Q9ZLtG2P9mKoXVCjkLIQdpvbxEz0kevG6
-
     Hc6MJC14uzh22REsA4DE6D2PxaIbBd0//EAdb7JB0WjOqNp4o4t7qtzmst2R61zL
-
     MWEBjDJeNSgHuq/M640fK+AxZWZ3g8f9iB6cm90flixIcCN9RItL+VHY5QNfrXU1
-
     +a7/KzB4kkKvmD+zininPE78G4nZeTmd3/Ir9L1JAYuYJY8X91yeXP9lGOHMNijg
-
     iv1cQIMnH7srXZOR9CvnDuEeZNhdmAcOoFwtgp3Gbua3M6BHLFp4QaA+D+u9ur7n
-
     DJ9oBQH8LBfoDuhXG/XUGtt4e4I1cNuIeQcwhFk+YQ4/EZcy/Ao=
-
     =cQdz
-
     -----END PGP SIGNATURE-----
-
-    '
-- version: 1.5.0
-  hash_sha256: '3fbb7ae71f3ce46a3524068e7f493e21ad98b4ac016eb199133ff4ac57c95972  linux-amd64.zip
-
+- version: "1.5.0"
+  hash_sha256: |
+    3fbb7ae71f3ce46a3524068e7f493e21ad98b4ac016eb199133ff4ac57c95972  linux-amd64.zip
     6abc706a5c0e7f4f53a17bb5598e5aa1957a69de4c563bd114f554f64f8936ed  linux-arm64.zip
-
     f13ab7d8fb7699eacd130f74013174a99965ed55846afb12e2a8d981e3a4f680  mac-amd64.zip
-
     cb893ca8bd7fd05d1f70c021dde7c0a5d4dacfc2fe9ae8b1a8e8d3ed834f8cff  mac-m5.zip
-
     f870a241b3b25cb47f00aac3b364694a53d9e3046738f813749e500521bf3a01  windows-amd64.zip
-
-    '
-  sign_gpg: '-----BEGIN PGP SIGNATURE-----
-
+  sign_gpg: |
+    -----BEGIN PGP SIGNATURE-----
 
     iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmqdKaIACgkQa9UaMJ3z
-
     Q88uMhAAg+4szjA6fLDj5vDKxvgKAnt8/pryz1oRAYpYK72QT8zuOXBh4L1khneV
-
     ToboV5NZbpbqHiSXThau8EWT0hjQUKtn4U++shBJyTJXctGQUNWGuLVBrNjGbZIK
-
     077T1AKLAXLps1N2dL6o2WPJ6icQVgLBglYs3P7Si7Rmq8J3nF1rFT04pFmYozor
-
     kc2KLu9pj9MwKsTm04knCNzXMzdaMtrcsZO8e4HUKXl/VnX4BWZVV+prOlPiRZ4d
-
     GbI5SKVP0HZVD9hlEXExwWAFY5Zz6cWpeLCkgl3L5TH1YU1kCRPgkjFNAe7l6vck
-
     tVdSLYjnLsl15xEEA8mIoVPai1BdTayiC5KVUfz42vJT9BFwKzxRT+evyVYLbcjm
-
     qwzpu9OAzLSOo6Ic3rmCaH2xZgtBqE0sHciYYtxVzRRYskVGA+h15IyvP/rqXvf1
-
     Az8zBuurWip+hvdVf+7t4cvzg7Fv3J+OObuMHjkkUD4wCGVWGbOqqEEHydfxK3jG
-
     Ce4FiRVklbeBFQBuk/VDg2Q0yA8+PJRtvR7oVh3H0qhOUqU87K6qjPDAFhmt1QD7
-
     W5lnVTtyFiRrk5zPd5CE1Z4aeddRRJ4mPO3GTC8g4IHAYKRJyeFDhPx5/1cIviqH
-
     88+zhHMY+ZEf28A5+rpTmAeRFW6RkFt6GgRYIYMT8W/zMhTSeis=
-
     =bHhy
-
     -----END PGP SIGNATURE-----
-
-    '
