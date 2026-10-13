@@ -4,22 +4,7 @@
     5f6287c492ddc2024801b2787972a9a37fc4105e92c71a769fee49cfc8e98d97  linux-arm64.zip
     2ab8dc6e0e91c48d7db07471235426cc34c4c5f3519258652aa1d67a730a7cc3  windows-amd64.zip
   sign_gpg: |
-    -----BEGIN PGP SIGNATURE-----
-
-    iQIzBAABCgAdFiEE09RBOxFH8cabfO/ja9UaMJ3zQ88FAmrOaZ0ACgkQa9UaMJ3z
-    Q88mOw//fOrMewcWjR9To9bZlYcnOYIS26nRcRjYw/Hjkyk3xu/ZjyvsMZWFKXCs
-    RSIiVuIfykBWHcD0LWtjIkaB2YHM+DZW3Kw5u5szhurkn1RTlDTjQOOWIqdfFafC
-    Dye+ixCeZxImupiDWkH4NckwLVFdA1ycuosqQR3R1SGR04VQFt4YD6qRlcKKq10X
-    wF3+3SCRCiQEi9mVosePhKv4qJwu3XKqMpJjikw6+VsEuzwHvdtPi6c6WhhQuRIM
-    fPWNb0H+0ex1tqH9qt/tT6/deA0YepYCV1QwCWfsy8QvwwczeqtLRyx9F0i8FWuG
-    uecr9mSeDa2ps7+pw4827ULv5MjYTpbifz8psKzfcdCze01jN3lzubNE7GLBcmTu
-    N19DVKd5b5pda1u8VuU5Mw5Xjl6uOxl1glYA07bmGXe7TKrYrwEsqC8G/w5CckNz
-    grJlI9aS8fmh83DPI6dbVP/LqHrwk0bi6TmYN+BwccOowiHZlakuqJGU6UhHt4jn
-    yqnm7fN3z40buq8/TU5qx04nUX9e3KSoa9W+7kDeyJ7U0yNI9PKRWlOv0vBH2t2C
-    BwzDGwsijnhRWkFosMaiQ4B0dG7P3Y81FpLrYdrgfptTLk+CkpfAALvcgTd131qU
-    4yt0vHWlDSzxUed0wDBkcbAny63NMzTnRG6AA9jnLd05uk4f1JU=
-    =8Kp0
-    -----END PGP SIGNATURE-----
+    Breaking change, no automatic update for this release.
   autoupdate: false
 - version: "1.9.1r1"
   hash_sha256: |
@@ -28,6 +13,7 @@
     5ee50730edcd01c48b177dfd6bca07989c27fc685844b532b5af745b65b316c5  windows-amd64.zip
   sign_gpg: |
     Breaking change, no automatic update for this release.
+  autoupdate: false
 - version: "1.9.1"
   hash_sha256: |
     ca989461e50872f05f04537fcace3151791aa3c5af628408fa65837c42ffe9b6  linux-amd64.zip
