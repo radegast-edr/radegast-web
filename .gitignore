@@ -6,3 +6,5 @@ _site
 Gemfile.lock
 *.gem
 .DS_Store
+.monthly-post-prompt.md
+.monthly-post-vibe-export.json
